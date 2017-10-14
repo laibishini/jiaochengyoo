@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+
+
+
+}
+
+
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+
+select, input {
+  vertical-align: middle;
+}
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+
+/*防止拖动*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+  border-collapse: collapse;
+}
+
+body {
+  font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+  background: #fff;
+
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+s, i, em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.col-red {
+  color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+  /*版心 提取 */
+  width: 1210px;
+  margin: 0 auto;
+  /* background-color: red; */
+  /* overflow: inherit; */
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.al {
+  text-align: left
+}
+
+.ac {
+  text-align: center;
+  line-height: 27px;
+}
+
+.ar {
+  text-align: right
+}
+.clear{ clear:both}
+
+.hide {
+  display: none
+}
+
+#header .w{
+  line-height: 30px;
+}
+
+
+
+
+
+/*头部导航开始*/
+.shortcut {
+  height: 30px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+}
+
+.shortcut .dt,
+.shortcut .fore {
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+
+.shortcut .dt i,
+.fore i {
+  font: 400 15px/15px "宋体";
+  position: absolute;
+  top: 11px;
+  right: 3px;
+  height: 7px;
+  overflow: hidden;
+  width: 15px;
+}
+
+.shortcut .dt s,
+.fore s {
+  position: absolute;
+  top: -11px;
+  left: 0;
+}
+
+.shortcut .fr li {
+  float: left;
+  padding: 0px 3px;
+  line-height: 2;
+  line-height: 28px;
+}
+
+.fr .line {
+  width: 1px;
+  height: 12px;
+  /* background-color: #ddd; */
+  margin-top: 9px;
+  padding: 0;
+}
+.shortcut .tel-jd {
+  padding: 0 20px 0 25px;
+}
+.tel {
+  position: absolute;
+  width: 15px;
+  height: 20px;
+
+  left: 5px;
+  top: 5px;
+}
+
+.shortcut a:hover {
+
+    color: #C81623;
+
+}
+/*头部导航结束*/
+
+/*顶部end*/
+/*topbanner start*/
+.topbanner {
+  background-color: #8A25C6;
+}
+.close-banner {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 19px;
+  height: 19px;
+  background: url(../images/close.png) no-repeat;
+}
+.close-banner:hover {
+  background-position: bottom;
+}
+.tp {
+  position: relative;
+}
+/*topbanner end*/
+#logobox{ width:970px; margin:15px auto 5px; text-align: center; height:auto }
+
+#logobox .logoimg{ float:left; width:280px; display:block;height:74px; text-align:left;}
+
+#logobox .search{ float:left; width:460px; display:block;height:74px; margin-top:5px; margin-left:10px;}
+
+#logobox .rightabout{ float:left; width:220px; display:block;height:74px; text-align:left;}
+
+.floatclear{ clear:both;font: 0px/0px sans-serif;clear: both;display: block;hight:0;line-hight:0}
+
+#logobox .search .s_form{ background:url(../images/search_bg.jpg);float:left;height:43px;width:438px;overflow:hidden;}
+
+#logobox .search .s_b_link{float:left;height:22px;line-height:24px;color:#999;margin-top:4px;width:403px;text-align:left; overflow:hidden;}
+
+#logobox .rightabout ul{ list-style:none}
+
+#logobox .rightabout ul li{ list-style:none; line-height:25px;}
+#logobox .search .s_form .s1{width:284px;height:32px;font-size:12px;color:#767676;float:left; border:0 }
+#logobox .search .s_form .s1 input{ width:284px; height:24px; line-height:24px; margin-top:6px; margin-left:40px; border:0;outline:none; padding-top:4px; color:#999999}
+#logobox .search .s_form .btn input{ width:103px; height:33px; color:#FFFFFF; background:url(../images/search_bn.jpg) no-repeat; font-size:14px; font-weight:bold; border:0; cursor:pointer; margin-left:45px; margin-top:5px;}
+#logobox .search .s_b_link a{color:#333;padding:0 5px;}
+
+
+

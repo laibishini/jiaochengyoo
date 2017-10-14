@@ -1,0 +1,139 @@
+@base: #285398;
+
+.navhead{
+  height: 38px;
+  background-color: @base;
+
+  .navCon-cate{
+    width: 210px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    text-indent: 10px;
+    background: #285398;
+    color: #FFF;
+    position: relative;
+
+  }
+  .navCon-cate-title a{
+    color: #ffffff;
+    line-height: 3;
+  }
+  .navCon-menu{
+    margin-left:95px;
+    li{
+
+        float: left;
+        height: 38px;
+        line-height: 38px;
+        overflow: hidden;
+        text-align: center;
+        width: 100px;
+      a{
+        color: #FFFFFF;
+
+        font-size: 14px;
+        font-weight: bold;
+        height: 38px;
+        line-height: 37px;
+        text-decoration: none;
+        width: 100px;
+
+
+      }
+
+      }
+
+  }
+
+  .cateMenu{
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.3);
+    background: @base;
+    cursor: pointer;
+    li{
+      width: 210px;
+      overflow: hidden;
+      border-bottom: 1px solid #f7f7f7;
+      .cate-tag{
+        width: 190px;
+        padding: 10px 5px 10px 15px;
+        overflow: hidden;
+        line-height: 25px;
+        display: block;
+        .listModel{
+
+        }
+        strong{
+          height: 25px;
+          line-height: 25px;
+          width: 172px;
+          display: block;
+          text-indent: 0px;
+          a{
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+          }
+
+        }
+        .listModel{
+          text-indent: 0px;
+          p{
+            height: 26px;
+
+            a{
+              font-size: 12px;
+              font-weight: normal;
+              color: #f7f7f7;
+              text-indent: 0px;
+              padding: 0 11px 0 0;
+
+
+
+            }
+            a:hover{
+              text-decoration: underline;
+            }
+          }
+          p:hover{
+            transform: translate(0,0);
+            transition:all .2s ease-in 0s;
+            width: 210px;
+            height: 26px;
+            background-color: #a585ff;
+          }
+        }
+      }
+
+      .list-item{
+        width: 750px;
+        padding: 10px 10px 20px 10px;
+        border: 1px solid #A7A7A7;
+        border-left: none;
+        background: #FFFFFF;
+        box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 210px;
+        top: 0px;
+        z-index: 5;
+        .itemleft{
+          width: 510px;
+          float: left;
+          dt{
+            color: rgb(102, 84, 70);
+            font-size: 14px;
+            text-indent: 0px;
+            margin-bottom: 8px;
+            margin-left: 8px;
+            border-bottom: 1px solid red;
+
+          }
+        }
+      }
+    }
+  }
+}
